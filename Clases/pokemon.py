@@ -29,6 +29,14 @@ class pokemon:
         self.defensa = defensa
     def set_salud(self, salud):
         self.salud = salud
+
+    
+    def is_alive(self):
+        if self.salud > 0:
+            return True
+        else:
+            return False
+
     def __str__(self):
         return "Nombre: " + self.nombre + "\nID: " + str(self.id) + "\nAtaque: " + str(self.ataque) + "\nDefensa: " + str(self.defensa) + "\nSalud: " + str(self.salud)
         
