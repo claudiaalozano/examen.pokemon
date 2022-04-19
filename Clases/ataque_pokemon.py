@@ -26,10 +26,16 @@ class ataque(Pokemon):
             self.puntos_salud -= self.indice_ataque
         elif id == 6:
             self.puntos_salud -= self.indice_ataque
-#función  fight_attack(self, Pokémon pokemon_to_attack). Método que implementa el ataque del Pokémon usando un golpe sobre otro Pokémon. Este método se basa en el método fight_defense(self, int points_of_damage) del Pokémon atacado. Se aplicará el índice de ataque del Pokémon atacante como representación del golpe dado. Este método devolverá un booleano True si se ha podido atacar a la criatura Pokémon.
+#función  fight_attack(self, Pokémon pokemon_to_attack). Método que implementa el ataque del Pokémon usando un golpe sobre otro Pokémon. Este método se basa en el método fight_defense(self, int points_of_damage) del Pokémon atacado. Se aplicará el índice de ataque del Pokémon atacante como representación del golpe dado. Este método devolverá un booleano True si se ha podido atacar a la criatura Pokémon. 
+
     def fight_attack(self, pokemon_to_attack):
         if pokemon_to_attack.fight_defense(self.indice_ataque):
             return True
+        if self.tipo == "Tierra":
+                if random.randint(1, 2) == 1:
+                    indice_ataque = self.indice_ataque * 2
+                else:
+                    indice_ataque = self.indice_ataque
         else:
             return False
         
