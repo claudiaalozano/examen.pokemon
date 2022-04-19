@@ -52,6 +52,20 @@ def puntos_salud(id):
     elif id == 6:
         return 88
 
+#funcion para el indice de ataque del Pokemon. Debe estar entre 1 y 10
+def indice_ataque(id):
+    if id == 1:
+        return 8
+    elif id == 2:
+        return 7
+    elif id == 3:
+        return 7
+    elif id == 4:
+        return 9
+    elif id == 5:
+        return 8
+    elif id == 6:
+        return 9
 
     
    
