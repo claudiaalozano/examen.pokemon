@@ -37,7 +37,22 @@ def tipo_arma(id):
     elif id == 3 or id == 6: 
         return "codazo"
 
-#
+#funcion para los puntos de salud que tiene el pokemon. Debe de estar entre 1 y 100.
+def puntos_salud(id):
+    if id == 1 :
+        return 69
+    elif id == 2:
+        return 85
+    elif id == 3:
+        return 74
+    elif id == 4:
+        return 82
+    elif id == 5:
+        return 78
+    elif id == 6:
+        return 88
+
+
     
    
     
