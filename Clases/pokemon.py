@@ -1,42 +1,39 @@
-class pokemon:
-    def __init__(self, nombre, id, ataque, defensa, salud):
-        self.nombre = nombre
-        self.id = id
-        self.ataque = ataque
-        self.defensa = defensa
-        self.salud = salud
-    def atacar(self, pokemon):
-        pokemon.salud -= self.ataque
-    def defender(self, pokemon):
-        self.salud -= pokemon.ataque
-    def get_nombre(self):
-        return self.nombre
-    def get_id(self):
-        return self.id
-    def get_ataque(self):
-        return self.ataque
-    def get_defensa(self):
-        return self.defensa
-    def get_salud(self):
-        return self.salud
-    def set_nombre(self, nombre):
-        self.nombre = nombre
-    def set_id(self, id):
-        self.id = id
-    def set_ataque(self, ataque):
-        self.ataque = ataque
-    def set_defensa(self, defensa):
-        self.defensa = defensa
-    def set_salud(self, salud):
-        self.salud = salud
-
+#funcion para id del pokemón, que es un número entero y único que identifica cada pokemon
+def id_pokemon(nombre):
+    if nombre == "Pikachu":
+        return 1
+    elif nombre == "Pidgey":
+        return 2
+    elif nombre == "Squirtle":
+        return 3
+    elif nombre == "Diglett":
+        return 4
+    elif nombre == "Venusaur":
+        return 5
+    elif nombre == "Charmeleon":
+        return 6
     
-    def is_alive(self):
-        if self.salud > 0:
-            return True
-        else:
-            return False
+#funcion para nombre del pokemón, que es una cadena de caracteres y que identifica cada pokemon
+def nombre_pokemon(id):
+    if id == 1:
+        return "Pikachu"
+    elif id == 2:
+        return "Pidgey"
+    elif id == 3:
+        return "Squirtle"
+    elif id == 4:
+        return "Diglett"
+    elif id == 5:
+        return "Venusaur"
+    elif id == 6:
+        return "Charmeleon"
 
-    def __str__(self):
-        return "Nombre: " + self.nombre + "\nID: " + str(self.id) + "\nAtaque: " + str(self.ataque) + "\nDefensa: " + str(self.defensa) + "\nSalud: " + str(self.salud)
-        
+
+   
+    
+    
+    
+  
+  
+   
+    
