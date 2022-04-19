@@ -67,12 +67,18 @@ def indice_ataque(id):
     elif id == 6:
         return 9
 
-    
-   
-    
-    
-    
-  
-  
-   
-    
+
+#funcion para el indice de defensa del Pokemon. Debe estar entre 1 y 10
+def indice_defensa(id):
+    if id == 1:
+        return 8
+    elif id == 2:
+        return 7
+    elif id == 3:
+        return 6
+    elif id == 4:
+        return 7
+    elif id == 5:
+        return 6
+    elif id == 6:
+        return 7
