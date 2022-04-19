@@ -1,5 +1,5 @@
 class pokemon:
-#funcion para id del pokemón, que es un número entero y único que identifica cada pokemon
+
     def id_pokemon(nombre):
         if nombre == "Pikachu":
             return 1
@@ -14,7 +14,7 @@ class pokemon:
         elif nombre == "Charmeleon":
             return 6
     
-#funcion para nombre del pokemón, que es una cadena de caracteres y que identifica cada pokemon
+
     def nombre_pokemon(id):
         if id == 1:
             return "Pikachu"
@@ -29,7 +29,7 @@ class pokemon:
         elif id == 6:
             return "Charmeleon"
 
-#funcion con getter y setter para tipo de arma que lleva cada pokemon. Hay cuatro tipos de arma: puñetazo, patada, codazo y cabezazo
+
     def set_tipo_arma(id, valor):
         if id == 1:
             return "cabezazo"
@@ -45,7 +45,7 @@ class pokemon:
             return "codazo"
 
 
-#funcion con get y set para los puntos de salud que tiene el pokemon. Debe de estar entre 1 y 100.
+
     def set_puntos_salud(id, valor):
         if id == 1:
             return 69
@@ -62,7 +62,7 @@ class pokemon:
 
 
 
-#funcion con get y set para el indice de ataque del Pokemon. Debe estar entre 1 y 10
+
     def set_indice_ataque(id, valor):
         if id == 1:
             return 9
@@ -78,7 +78,7 @@ class pokemon:
             return 8
 
 
-#funcion con get y set para el indice de defensa del Pokemon. Debe estar entre 1 y 10
+
     def set_indice_defensa(id, valor):
         if id == 1:
             return 8
