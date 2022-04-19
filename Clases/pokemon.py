@@ -28,7 +28,17 @@ def nombre_pokemon(id):
     elif id == 6:
         return "Charmeleon"
 
+#funcion para tipo de arma que lleva cada pokemon. Hay cuatro tipos de arma: puñetazo, patada, codazo y cabezazo
+def tipo_arma(id):
+    if id == 1 or id == 4:
+        return "cabezazo"
+    elif id == 2 or id == 5:
+        return "patada"
+    elif id == 3 or id == 6: 
+        return "codazo"
 
+#
+    
    
     
     
